@@ -10,7 +10,8 @@ public class Ex03 {
         ti = sc.nextDouble();
         System.out.println("Temperatura final em graus Celsius(C): ");
         tf = sc.nextDouble();
-        M = UserInput.positivo("Quantidade da água em kg: ");
+        System.out.print("Quantidade da água em kg: ");
+        M = UserInput.positivo(sc);
         //System.out.println(ti);
         sc.close();
         double Q = M*(tf-ti)*4184;
