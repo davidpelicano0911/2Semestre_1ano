@@ -28,7 +28,7 @@ public class Ex02 {
         
         double fundo = montante + (montante * (taxa/100));
         for (int i = 1;i<=12;i++){
-            System.out.print("Fundo do " + i + "mês: " + fundo + "\n");
+            System.out.printf("Fundo do %2d mês: %.2f \n",i,fundo);
             fundo += fundo * (taxa/100);
         }
 

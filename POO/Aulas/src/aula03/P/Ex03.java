@@ -36,7 +36,7 @@ public class Ex03 {
             tentativas ++;
         } while (n != rand);
         
-
+        System.out.print("Parabéns, acertou! \n");
         System.out.printf("Foram feitas %d tentativas. \n",tentativas);
     }
 }

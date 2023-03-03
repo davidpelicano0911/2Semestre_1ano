@@ -9,31 +9,17 @@ public class Ex01 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Valor: ");
         double n = UserInput.positivo(sc);
-        double inicial = n;
         int soma = 0;
         int count = 0;
-        if (UserInput.isPrime(n)){
-            //System.out.println("primeiro valor é primo");
-            count ++;
-            soma += n;
-        }
-        //System.out.println(soma);
-        while (true) {
-            System.out.print("Valor: ");
-            double valor = UserInput.positivo(sc);
-            if (valor == inicial){
-                if (UserInput.isPrime(valor)){
-                    soma += valor;
-                    count ++;
-                }
-                break;
-            }
-            if (UserInput.isPrime(valor)) {
-                soma += valor;
+
+        for (int i = 1; i<=n; i++){
+            if (UserInput.isPrime(i)){
                 count ++;
+                soma += i;
             }
-            
         }
+
+        
 
         System.out.printf("Temos %d valores primos e a soma destes será %d ",count,soma);
 
